@@ -1,0 +1,42 @@
+[
+  {
+    "id": "1",
+    "name": "Ibanez",
+    "logo": "/ibanez.png"
+  },
+  {
+    "id": "2",
+    "name": "Martin & Co",
+    "logo": "/martin.png"
+  },
+  {
+    "id": "3",
+    "name": "Fender",
+    "logo": "/fender.png"
+  },
+  {
+  "id": "4",
+  "name": "Gibson",
+  "logo": "/gibson.png"   
+},
+  {
+    "id": "5",
+    "name": "Taylor",
+    "logo": "/taylor.png"
+  },
+  {
+    "id": "6",
+    "name": "Gretsch",
+    "logo": "/gretsch.png"
+  },
+  {
+    "id": "7",
+    "name": "Takamine",
+    "logo": "/takamine.png"
+  },
+  {
+    "id": "8",
+    "name": "Seagull",
+    "logo": "/seagull.png"
+  }
+]

@@ -1,0 +1,251 @@
+/* Guitar Details Hero Section */
+.guitar-details-hero {
+  background: white;
+  padding: 60px 24px 20px;
+  position: relative;
+  overflow: hidden;
+  min-height: 70vh;
+}
+
+.guitar-details-topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 24px 32px;
+}
+
+.guitar-details-back {
+  font-size: 14px;
+  color: #475569;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.guitar-details-back:hover {
+  color: #ff6a1a;
+}
+.guitar-title-only {
+  font-size: 40px;
+  font-weight: 700;
+  color: #111;
+  margin-bottom: 0;
+}
+
+.guitar-details-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.guitar-details-logo img {
+  height: 32px;
+}
+
+.guitar-details-logo-text {
+  font-weight: 600;
+  font-size: 18px;
+  color: #0f172a;
+}
+
+.guitar-details-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 32px;
+  flex-wrap: wrap;
+  position: relative;
+}
+
+.guitar-details-text {
+  flex: 1;
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+  z-index: 2;
+}
+
+.guitar-details-text h1 {
+  font-size: 36px;
+  font-weight: 700;
+  color: #0f172a;
+  margin-bottom: 12px;
+}
+
+.guitar-details-right {
+  flex: 1;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 400px;
+}
+
+.orange-bg-right {
+  position: absolute;
+  width: 672px;
+  height: 700px;
+  top: -60px;
+  left: 0;
+  background: linear-gradient(180deg, #FF8C60 0%, #FF5B1C 100%);
+  border-bottom-right-radius: 151px;
+  border-bottom-left-radius: 360px;
+  opacity: 1;
+  z-index: 0;
+}
+
+.guitar-details-image {
+  width: 380px;
+  max-width: 100%;
+  object-fit: contain;
+  opacity: 1;
+  position: relative;
+  z-index: 1;
+}
+.rotate-up {
+  transform: rotate(-48deg);
+  transition: transform 0.5s ease;
+}
+
+.rotate-down {
+  transform: rotate(34deg);
+  transition: transform 0.5s ease;
+}
+
+
+/* Tabs Section */
+.spec-section {
+  padding: 40px 24px;
+  background-color: white;
+}
+
+.spec-tabs {
+  display: flex;
+  border-bottom: 1.5px solid #e2e8f0;
+  margin-bottom: 24px;
+}
+
+.spec-tab {
+  width: 50%;
+  text-align: center;
+  padding: 12px 0;
+  font-family: 'Satoshi', sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  cursor: pointer;
+  transition: color 0.3s ease, border-bottom 0.3s ease;
+}
+
+.spec-tab.active {
+  color: #ff6a1a;
+  border-bottom: 3px solid #ff6a1a;
+}
+
+.spec-tab.inactive {
+  color: #94a3b8;
+}
+
+.spec-content {
+  max-width: 900px;
+  margin: 0 auto;
+  font-family: 'Satoshi', sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 100%;
+  letter-spacing: 0;
+  color: #0f172a;
+}
+
+.spec-description {
+  margin-bottom: 28px;
+  font-weight: 600;
+}
+
+.spec-list {
+  list-style-type: disc;
+  padding-left: 20px;
+  font-family: 'Satoshi', sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 100%;
+  letter-spacing: 0;
+  color: #0f172a;
+}
+.artist-section {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+}
+
+.artist-card {
+  width: 260px;                        /* Зголемена ширина */
+  padding: 16px;                       /* Повеќе простор внатре */
+  border-radius: 10px;
+  border: 2px dashed #ffefe8;
+  background-color: #fdf2f2;
+  text-align: center;
+  margin: 12px;
+  transition: transform 0.2s ease-in-out;
+}
+
+.artist-card:hover {
+  transform: scale(1.05);
+}
+
+.artist-image {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.artist-name {
+  margin-top: 12px;
+  font-weight: 600;
+  font-size: 18px;                    /* Поголем фонт */
+  color: #1a1a1a;
+}
+
+.language-switcher {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 1rem;
+}
+
+.language-switcher select {
+  padding: 6px 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  background-color: #fff;
+  font-size: 14px;
+  cursor: pointer;
+  transition: border 0.3s ease;
+}
+
+.language-switcher select:hover {
+  border-color: #666;
+}
+.guitar-details-image {
+  width: 380px;
+  max-width: 100%;
+  object-fit: contain;
+  opacity: 1;
+  position: relative;
+  z-index: 1;
+  filter: brightness(1.1) contrast(1.2) saturate(1.3); /* поинтензивна боја */
+  border: 2px solid #ff6a1a; 
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.guitar-details-image:hover {
+  transform: scale(1.05);
+  filter: brightness(1.2) contrast(1.3) saturate(1.5);
+}

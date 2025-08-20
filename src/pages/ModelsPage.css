@@ -1,0 +1,309 @@
+/* Hero Section */
+.models-hero {
+  background: white;
+  padding: 60px 24px 20px;
+  position: relative;
+  overflow: hidden;
+  min-height: 70vh;
+}
+
+.models-hero__topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 24px 32px;
+}
+
+.models-hero__back {
+  font-size: 14px;
+  color: #475569;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.models-hero__back:hover {
+  color: #ff6a1a;
+}
+
+.hero__logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo {
+  height: 32px;
+}
+
+.logo-text {
+  font-weight: 600;
+  font-size: 18px;
+  color: #0f172a;
+}
+
+.models-hero__content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 32px;
+  flex-wrap: wrap;
+  position: relative;
+}
+
+.models-hero__text {
+  flex: 1;
+  max-width: 700px;
+  margin: 0 auto;
+  text-align: center;
+  z-index: 2;
+}
+
+.models-hero__text h1 {
+  font-size: 48px;
+  font-weight: 700;
+  color: #0f172a;
+  margin-bottom: 12px;
+}
+
+.models-hero__text .highlight {
+  color: #ff6a1a;
+}
+
+.models-hero__text p {
+  font-family: 'Satoshi', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 160%;
+  color: #475569;
+  margin-bottom: 8px;
+}
+
+.models-hero__right {
+  flex: 1;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 500px;
+}
+
+.orange-bg {
+  position: absolute;
+  width: 672px;
+  height: 700px;
+  top: -60px;
+  left: 0;
+  background: linear-gradient(180deg, #FF8C60 0%, #FF5B1C 100%);
+  border-bottom-right-radius: 151px;
+  border-bottom-left-radius: 360px;
+  opacity: 1;
+  z-index: 0;
+}
+
+.brand-logo-floating {
+  width: 451px;
+  height: 280px;
+  object-fit: contain;
+  opacity: 0.4;
+  position: relative;
+  z-index: 1;
+}
+
+.assistant-credit {
+  font-family: 'Satoshi', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  color: #475569;
+  margin-top: 16px;
+}
+
+/* Selection Section */
+.models-selection {
+  padding: 40px 24px;
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.models-selection__title {
+  font-size: 32px;
+  font-weight: 700;
+  font-family: 'Satoshi', sans-serif;
+  margin-bottom: 32px;
+  color: #0f172a;
+}
+
+.models-selection__title .highlight {
+  color: #ff6a1a;
+}
+
+.models-selection__filters {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  margin-bottom: 40px;
+  flex-wrap: wrap;
+}
+
+.models-selection__input {
+  padding: 12px 16px;
+  font-size: 16px;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  width: 250px;
+  max-width: 90%;
+  background-color: #f9fafb;
+}
+
+.models-selection__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 32px;
+}
+
+/* Guitar Card Styles */
+.guitar-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background-color: #fff;
+  padding: 16px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease;
+}
+
+.guitar-card:hover {
+  transform: translateY(-5px);
+}
+
+.guitar-image {
+  width: 250px;
+  height: 120px;
+  object-fit: contain;
+  margin-bottom: 12px;
+}
+
+.guitar-name {
+  font-size: 16px;
+  font-weight: 500;
+  color: #0f172a;
+  margin-bottom: 4px;
+}
+
+.guitar-price {
+  font-size: 14px;
+  color: #475569;
+}
+
+/* Dropdown input wrapper */
+.dropdown-wrapper {
+  position: relative;
+}
+
+.dropdown-arrow {
+  position: absolute;
+  right: 14px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 14px;
+  color: #ff6a1a;
+  pointer-events: none;
+}
+
+/* Dropdown menu styling */
+.dropdown-menu {
+  position: absolute;
+  top: 110%;
+  left: 0;
+  width: 100%;
+  background-color: #fff;
+  border: 1px solid #ff6a1a;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+  z-index: 5;
+  padding: 4px 0;
+}
+
+.dropdown-option {
+  padding: 10px 14px;
+  text-align: left;
+  font-size: 14px;
+  color: #0f172a;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.dropdown-option:hover {
+  background-color: #fff1eb;
+  color: #ff6a1a;
+}
+
+.dropdown-option.selected {
+  background-color: #fff1eb;
+  color: #ff6a1a;
+  font-weight: 500;
+}
+.models-selection__footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 40px;
+  border-top: 1px solid #e2e8f0;
+  margin-top: 40px;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.models-selection__count {
+  font-size: 13px;
+  text-transform: uppercase;
+  color: #64748b;
+  font-weight: 600;
+}
+
+.models-selection__count span {
+  font-weight: bold;
+  color: #0f172a;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.pagination {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.pagination__btn {
+  border: 1px solid #e2e8f0;
+  padding: 6px 10px;
+  min-width: 32px;
+  height: 32px;
+  font-size: 14px;
+  color: #64748b;
+  background-color: white;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.pagination__btn:hover {
+  background-color: #f1f5f9;
+}
+
+.pagination__btn.active {
+  border-color: #ff6a1a;
+  color: #ff6a1a;
+  font-weight: bold;
+}
+
+.pagination__dots {
+  color: #94a3b8;
+  font-size: 14px;
+  padding: 0 4px;
+}
